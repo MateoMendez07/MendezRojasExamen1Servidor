@@ -3,7 +3,7 @@ var http = require('http');
 //Creacion del servidor
 var server = http.createServer();
 //servicio web con mi apellido
-function mendez(req,resp){
+function mendezRojas(req,resp){
     //Estado satisfactorio 200, mensaje tipo texto plano configurado por json 
     resp.writeHead(200,{'contentType':'text/plain'});
     //Escribo el mensaje
@@ -12,7 +12,7 @@ function mendez(req,resp){
     resp.end();
 }
 
-server.on('request',mendez);
+server.on('request',mendezRojas);
 server.listen(3001,function(){
     console.log("La aplicación esta corriendo mediante el puerto 3001");
 });
