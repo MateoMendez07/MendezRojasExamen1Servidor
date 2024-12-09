@@ -1,5 +1,5 @@
 //Como primer paso, una variable para declarar el protocolo de intercambio
-var http = requiere('http');
+var http = require('http');
 //Creacion del servidor
 var server = http.createServer();
 //servicio web con mi apellido
